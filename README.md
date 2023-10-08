@@ -1,12 +1,14 @@
 ### TECNOLOGIAS
 
+  #NESTJS
   #TYPEORM
   #DOCKER
-    #MYSQL
+  #MYSQL
   #TABLEPLUS
 
 ### RECURSOS
   https://bluuweb.dev/nestjs/crud-mysql.html
+  https://bluuweb.dev/nestjs/auth-jwt.html
 
 ### BORRAR ARCHIVOS
   En la carpeta SRC, dejar solo
@@ -59,9 +61,6 @@
   Desde el modulo q va usar a otro modulo: 
       
   
-
-
-
 ### COMANDOS USADOS
 
   #iniciar proyecto NEST
@@ -87,3 +86,24 @@
 
   #correr en desarrollo
     yarn run start:dev
+
+
+### AUTENTICACI+ON
+  Crear entidad usuarios:
+    nest g res users --no-spec
+
+  Crear files auth que manejaran el tema de login y register
+  nest g module auth
+  nest g controller auth
+  nest g service auth
+
+  Para hashear las contraseñas
+    yarn add bcryptjs -SE
+
+  Instalar JWT
+    yarn add @nestjs/jwt -SE
+
+### AUTORIZACIÓN
+
+  Crear el GUARD
+  nest g guard auth --no-spec
