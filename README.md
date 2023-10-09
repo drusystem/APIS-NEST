@@ -88,6 +88,9 @@
   #correr en desarrollo
     yarn run start:dev
 
+  #variables de entorno
+  yarn add @nestjs/config -SE
+
 
 ### AUTENTICACI+ON
   Crear entidad usuarios:
@@ -121,4 +124,3 @@
   Instalar el paquete de conexion a pg con typeorm
   yarn add pg -SE
 
-  
