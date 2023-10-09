@@ -9,6 +9,7 @@
 ### RECURSOS
   https://bluuweb.dev/nestjs/crud-mysql.html
   https://bluuweb.dev/nestjs/auth-jwt.html
+  https://bluuweb.dev/nestjs/deploy.html
 
 ### BORRAR ARCHIVOS
   En la carpeta SRC, dejar solo
@@ -107,3 +108,17 @@
 
   Crear el GUARD
   nest g guard auth --no-spec
+
+
+### PASANDO DE MYSQL A POSTGRESQL
+
+  Borrar el contenedor usado (tiene el nombre de la carpeta del proyecto)
+  Modificar el docker-compose.yml
+  docker compose up -d
+
+  Cambiar el tipo de conexion en APP.MODULE.TS
+
+  Instalar el paquete de conexion a pg con typeorm
+  yarn add pg -SE
+
+  

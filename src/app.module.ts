@@ -9,11 +9,11 @@ import { AuthModule } from './auth/auth.module';
 @Module({
   imports: [
     TypeOrmModule.forRoot({
-      type: "mysql",
+      type: "postgres",
       host: "localhost",
-      port: 3307,
-      username: "user_nest",
-      password: "root",
+      port: 5436,
+      username: "postgres",
+      password: "postgres",
       database: "db_nest",
       autoLoadEntities: true,
       synchronize: true,
