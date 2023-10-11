@@ -112,6 +112,10 @@
   Crear el GUARD
   nest g guard auth --no-spec
 
+### ROLES
+  Crear guard para validar roles
+  nest g guard auth/guard/roles --flat
+
 
 ### PASANDO DE MYSQL A POSTGRESQL
 
