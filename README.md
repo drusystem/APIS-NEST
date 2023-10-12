@@ -128,3 +128,12 @@
   Instalar el paquete de conexion a pg con typeorm
   yarn add pg -SE
 
+### NOTAS
+
+  Si necesitamos la información del usuario, debemos colocar en el controlador>metodo
+    @ActiveUser() user: UserActiveInterface
+
+  
+### CORRECIONES
+  Reinstalar libreria para evitar versión *
+  yarn add @nestjs/mapped-types -SE
