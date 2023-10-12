@@ -10,6 +10,7 @@
   https://bluuweb.dev/nestjs/crud-mysql.html
   https://bluuweb.dev/nestjs/auth-jwt.html
   https://bluuweb.dev/nestjs/deploy.html
+  https://bluuweb.dev/nestjs/openapi.html
 
 ### BORRAR ARCHIVOS
   En la carpeta SRC, dejar solo
@@ -137,3 +138,24 @@
 ### CORRECIONES
   Reinstalar libreria para evitar versión *
   yarn add @nestjs/mapped-types -SE
+
+### DOCUMENTAR API
+  Instalar swagger
+  yarn add @nestjs/swagger -SE
+
+  Modificar MAIN.TS
+  Configurar el SwaggerModule
+  
+  Modificar NEST-CLI.JSON
+  Agregar  "plugins": ["@nestjs/swagger"] en compilerOptions
+
+  Eliminar la carpeta dist y volver a correr el proyecto en dev
+
+  Agrupar las APIS para la documentación por tags
+  @ApiTags('cats') encima del controlador correspondiente
+
+  Si el metodo/controlador necesita token bearer agregamos:
+  @ApiBearerAuth()
+
+  Agregar en el Main.ts
+  .addBearerAuth()
