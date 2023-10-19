@@ -92,6 +92,12 @@
   #variables de entorno
   yarn add @nestjs/config -SE
 
+  #manipular XML
+  yarn add cheerio
+  yarn add fs
+  yarn add xml-crypto
+
+
 
 ### AUTENTICACI+ON
   Crear entidad usuarios:
